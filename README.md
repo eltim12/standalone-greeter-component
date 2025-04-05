@@ -93,7 +93,7 @@ You can use this component in any HTML file. Here’s a full example:
       <!-- Include Vue -->
       <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
     
-      <!-- Include CSS (optional if included in JS) -->
+      <!-- Include CSS -->
       <link rel="stylesheet" href="./dist/compiled-greeter-component.css" />
     </head>
     <body>
