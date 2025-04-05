@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Greeter Test</title>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+
+  <!-- Greeter Component Styles -->
+  <link rel="stylesheet" href="./dist/compiled-greeter-component.css" />
+</head>
+
+<body>
+  <h1>Vue.js Component for Third-Party
+    Integration</h1>
+
+  <!-- Component Mount Target -->
+  <div id="my-component"></div>
+
+  <!-- Greeter Component Script -->
+  <script src="./dist/compiled-greeter-component.iife.js"></script>
+
+  <!-- Initialize the Greeter Component -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      GreeterLib.init('#my-component', {
+        message: 'Hello from the host app!',
+        buttonText: 'Click here!',
+        size: 'md',        // Options: 'sm', 'md', 'lg', 'xl'
+        theme: 'danger',   // Options: 'primary', 'danger', 'success', 'warning'
+        rounded: 'xl'      // Options: 'none', 'sm', 'md', 'lg', 'xl'
+      });
+    });
+  </script>
+</body>
+
+</html>
