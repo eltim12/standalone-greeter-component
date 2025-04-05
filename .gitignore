@@ -1,8 +1,18 @@
+# macOS system files
 .DS_Store
-node_modules
-/dist
 
-# local env files
+# Node dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Firebase cache and config (safe to ignore if you only want to deploy, not share)
+.firebase/
+.firebase/hosting..cache
+.firebaserc
+
+# Local environment variables
 .env.local
 .env.*.local
 
@@ -12,11 +22,17 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Editor directories and files
-.idea
-.vscode
+# Editor/project config
+.idea/
+.vscode/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Optional: prevent accidentally pushing test coverage
+coverage/
+
+# Optional: prevent pushing test snapshots
+__snapshots__/
